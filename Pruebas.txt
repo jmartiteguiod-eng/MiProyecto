@@ -1,1 +1,2 @@
-Este archivo lo creo para ir probando el funcionamiento de GitHub
+Este archivo lo creo para ir probando el funcionamiento de GitHub.
+Añado una linea
