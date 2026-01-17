@@ -1,1 +1,5 @@
 Propuesta de proyecto
+Proponer un proyecto de desarrollo de una aplicación informática que 
+responda a una necesidad real o potencial identificada, justificando su 
+elección, alcance y viabilidad inicial. La propuesta debe ser aceptada por el 
+profesor (apto) antes del inicio del resto de tareas.
