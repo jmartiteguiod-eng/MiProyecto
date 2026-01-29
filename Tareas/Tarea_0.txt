@@ -7,3 +7,4 @@ profesor (apto) antes del inicio del resto de tareas.
 
 Redactada propuesta.
 Pendiente apertura de tareas para entrega.
+(29/01/2026). Una vez realizada la entrega y calificada se subirá a este repositorio.
