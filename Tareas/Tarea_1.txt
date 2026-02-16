@@ -1,4 +1,9 @@
-
+Elaborar un documento de referencia que clasifique las empresas del sector 
+e identifique la estructura, funciones y procesos clave de sus 
+departamentos, sirviendo como la base funcional para el desarrollo de la 
+aplicación informática. 
+Identificación del sector objetivo de la aplicación (por ejemplo: hotelero, 
+servicios legales, transporte, entretenimiento, etc.).
 
 Este punto corresponde a la tarea 01 "Análisis de Sector"
 
@@ -7,4 +12,14 @@ Paso 1. Busqueda del información para el desarrollo de este punto.
 
 Paso 2. 04/02/2026 Redacción de la actividad.
 
-Paso 3. 
+Paso 3. 05/02/2026 Esperando confirmación de tarea_00 sea acta para profundizar.
+
+Paso 4. 08/02/2026 Creado boceto para presentar. Pendiente confirmación tarea_00.
+
+Paso 5. 10/02/2026 Revisión
+
+Paso 6. 14/02/2026 Estaba para entregar pero se detectan incoherencias y se vuelve a meter en el proceso scrum para su mejora.
+
+
+
+

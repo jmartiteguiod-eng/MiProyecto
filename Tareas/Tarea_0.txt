@@ -10,4 +10,5 @@ Pendiente apertura de tareas para entrega.
 (29/01/2026). Una vez realizada la entrega y calificada se subirá a este repositorio.
 
 03-02-2026 ---> Entrega y conversión PDF propuesta proyecto.
+10-02-2026 ---> Apta. Ver anotación profesor en la entrega.
 
