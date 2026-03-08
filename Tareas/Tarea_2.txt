@@ -1,0 +1,27 @@
+Objetivo 
+Realizar un análisis de mercado para: 
+ Detectar las demandas no cubiertas del sector. 
+ Valorar las oportunidades de negocio asociadas a dichas demandas. 
+ Proponer el tipo de proyecto de aplicación informática más viable y 
+rentable para satisfacerlas.
+Entregable 
+Documento pdf con las siguientes partes: 
+1. Análisis de necesidades. Investigación demostrable (informes, 
+encuestas, etc.) en el que se definan ineficiencias operativas o 
+carencias de herramientas más críticas que el software actual no 
+resuelve. 
+2. Evaluación de la demanda y competencia. Investigación de las 
+soluciones informáticas existentes, identificando sus fortalezas y 
+debilidades. Determinar si la demanda es grade y si los competidores 
+dejan un espacio para nueva solución. 
+3. Análisis DAFO de la aplicación. Identificación de los factores internos 
+(debilidades y fortalezas) y factores externos (amenazas y 
+oportunidades) que influirán en la viabilidad de la aplicación 
+propuesta.
+4. Propuesta y definición del tipo de proyecto. Teniendo en cuenta los 
+puntos anteriores define la visión de alcance del proyecto. Define el 
+tipo de aplicación y por qué es la más adecuada para explorar la 
+oportunidad.
+
+28-02-2026. Repaso de esta actividad, buscar carencias, intentar que se ajuste a lo pedido.
+05-03-2026. Repaso final para entrega en la fecha de este apunte.
