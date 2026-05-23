@@ -1,0 +1,14 @@
+#15
+Objetivo 
+ 
+Elaborar el diagrama Entidad – Relación del proyecto, representando la 
+estructura de la información y las relaciones lógicas entre entidades del sistema, 
+sirviendo como base fundamental para el diseño de la base de datos. 
+ 
+Entregable 
+ 
+Documento pdf con el Diagrama Entidad Relación.
+
+Entrega 19-04-2026
+
+
