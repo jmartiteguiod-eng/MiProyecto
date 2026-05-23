@@ -1,0 +1,15 @@
+#13
+Entregable 
+ 
+Documento pdf con el estudio de viabilidad, que comprenderá: 
+1. Viabilidad operacional. Estructurar el trabajo en fases y tareas 
+específicas, estimando el esfuerzo necesario (horas/persona) 
+requerido para cada componente. 
+2. Viabilidad de recursos. Definir la capacidad del equipo (roles, 
+perfiles, dedicación, etc.) y listar infraestructura tecnológica 
+necesaria.
+3. Viabilidad financiera. Cuantificar los costes totales (personal, 
+licencias, infraestructura) a partir de los recursos previstos. 
+Determinar la inversión inicial y el presupuesto operativo anual.
+
+Entrega 12-04-2026
