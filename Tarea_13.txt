@@ -1,0 +1,16 @@
+#18
+Objetivo 
+Elaborar documentación del diseño visual y de interacción de la aplicación, 
+definiendo el estilo, los componentes reutilizables y el diseño final de las 
+pantallas. 
+Entregable 
+Documento pdf con las siguientes partes: 
+1. Sistema de diseño. Elementos fundamentales del diseño visual 
+(colores primarios y secundarios, tipografía, estilos de iconos, etc.). 
+Definición de la librería de elementos reutilizables (botones, tarjetas, 
+etc.) 
+2. Prototipo funcional final. Prototipo navegable.
+#18
+Inicio 26/04/2026
+Fin 03/05/2026
+Entreaga 03/05/2026
