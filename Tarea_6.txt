@@ -1,0 +1,19 @@
+#11
+Objetivo 
+Determinar la totalidad de las características funcionales del proyecto 
+mediante: 
+ Diagrama de casos de uso completo. 
+ Especificación detallada de cada caso de uso crítico. 
+Entregable 
+Documento pdf con las siguientes partes: 
+1. Diagrama de casos de uso. Se debe identificar claramente los actores  
+que interactuarán en la aplicación. Posteriormente definir el 
+conjunto completo de casos de uso (relacionado a las 
+funcionalidades de la aplicación) que se ofrece a los usuarios. 
+2. Casos de uso críticos (descripción detallada). 
+o Seleccionar los casos de uso principales. 
+o Para cada uno de ellos elaborar una descripción detallada que 
+incluya: nombre del caso de uso, precondiciones, flujo 
+principal, postcondiciones, etc.
+
+29-03-2026. Finalización y entrega.
