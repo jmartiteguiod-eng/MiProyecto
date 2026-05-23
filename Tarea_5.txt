@@ -1,0 +1,17 @@
+#10
+Objetivo  
+Elaborar el documento de especificación de requisitos del software para la 
+aplicación, determinado de forma precisa y verificable todas las 
+características funcionales y no funcionales requeridas. 
+ 
+Entregable 
+ 
+Documento pdf con las siguientes partes: 
+1. Requisitos Funcionales (RF). Descripción clara y numerada de las 
+funcionalidades. 
+2. Requisitos No Funcionales (RNF). Descripción clara y numerada de 
+los requisitos no funcionales.
+
+15-03-2026. Planificación para su realización
+18-03-2026. En curso. Prevista finalización el fin de semana del 20/3
+22-03-2026. Entregado
