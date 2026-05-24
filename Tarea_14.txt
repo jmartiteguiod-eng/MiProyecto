@@ -1,0 +1,19 @@
+#19
+Objetivo 
+Elaborar el plan de pruebas maestro que defina los aspectos críticos de control y 
+los procedimientos necesarios para asegurar que la aplicación cumpla con los 
+requisitos funcionales y no funcionales. 
+No hay que realizar las pruebas (aún no hemos empezado a realzar la aplicación). 
+En este momento definimos qué pruebas se realizarán; además del quién, cómo 
+y por qué se realizarán.
+Entregable 
+Documento pdf con las siguientes partes: 
+1. Definición del alcance de la calidad. Identificar los módulos del 
+sistema y los requisitos no funcionales más críticos que deben ser 
+probados. 
+2. Diseño de la estrategia de pruebas. Detallar los tipos de pruebas a 
+ejecutar y su secuencia. Seleccionar los tipos de pruebas necesarios 
+(Unitarias, Integración, Sistema, Aceptación, Rendimiento, Seguridad) 
+y definir los entornos, roles y responsables.
+
+Entrega 24/05/2026
