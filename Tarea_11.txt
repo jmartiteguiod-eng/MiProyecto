@@ -1,9 +1,0 @@
-#16
-Objetivo 
-Convertir el diagrama Entidad – Relación previamente elaborado en el Esquema 
-Relacional, definiendo las tablas, sus claves y restricciones de integridad 
-necesarias. 
-Entregable 
-Documento pdf con el Esquema Relacional. 
-Rubrica: 
-Entrega 26/04/2026
