@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentación Técnica - No Te Cortes</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #333; line-height: 1.6; margin: 0; padding: 0; background: #f4f6f9; }
+        header { background: #1e293b; color: white; padding: 25px 40px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        header h1 { margin: 0; font-size: 26px; font-weight: 700; }
+        header p { margin: 6px 0 0 0; color: #94a3b8; font-size: 15px; }
+        .container { display: flex; min-height: calc(100vh - 98px); }
+        nav { width: 280px; background: white; border-right: 1px solid #e2e8f0; padding: 30px 20px; }
+        nav h3 { margin-top: 0; color: #64748b; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 15px; }
+        nav ul { list-style: none; padding: 0; margin: 0; }
+        nav li { margin-bottom: 10px; }
+        nav a { color: #2563eb; text-decoration: none; font-size: 14px; display: block; padding: 8px 12px; border-radius: 6px; font-weight: 500; transition: background 0.2s; }
+        nav a:hover { background: #eff6ff; color: #1d4ed8; }
+        main { flex: 1; padding: 40px; background: #f8fafc; overflow-y: auto; }
+        .card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 30px; margin-bottom: 35px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        h2 { color: #0f172a; border-bottom: 2px solid #f1f5f9; padding-bottom: 12px; margin-top: 0; font-size: 22px; display: flex; align-items: center; justify-content: space-between; }
+        h3 { color: #1e293b; font-size: 16px; margin-top: 25px; margin-bottom: 10px; border-left: 4px solid #2563eb; padding-left: 10px; }
+        .badge { background: #e0f2fe; color: #0369a1; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; font-family: monospace; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 15px; background: white; }
+        th, td { text-align: left; padding: 14px; border-bottom: 1px solid #f1f5f9; font-size: 14px; vertical-align: top; }
+        th { background: #f8fafc; color: #475569; font-weight: 600; text-transform: uppercase; font-size: 12px; letter-spacing: 0.02em; }
+        tr:hover td { background: #fafafa; }
+        code { font-family: 'Courier New', Courier, monospace; background: #f1f5f9; padding: 3px 6px; border-radius: 4px; color: #db2777; font-size: 13px; font-weight: bold; }
+        .desc { color: #475569; display: block; margin-top: 4px; font-size: 13.5px; }
+        p.intro { color: #475569; font-size: 15px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>No Te Cortes - Documentación Técnica del Sistema</h1>
+    <p>JavaDoc de Componentes Críticos y Arquitectura de Datos para el Sistema de Gestión de Citas de la Barbería</p>
+</header>
+
+<div class="container">
+    <nav>
+        <h3>Estructura del Proyecto</h3>
+        <ul>
+            <li><a href="#cita">com.example.notecortes.Clases.Cita</a></li>
+            <li><a href="#timeslot">com.example.notecortes.Clases.TimeSlot</a></li>
+            <li><a href="#adapter">com.example.notecortes.Adaptador.TimeSlotAdapter</a></li>
+            <li><a href="#citasact">com.example.notecortes.Citas.CitasActivity</a></li>
+            <li><a href="#reservaract">com.example.notecortes.Citas.ReservarCitaActivity</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="card" id="cita">
+            <h2>Class Cita <span class="badge">POJO Model</span></h2>
+            <p class="intro">Estructura de datos unificada para mapear de manera directa y bidireccional los documentos NoSQL de la colección raíz desnormalizada <code>user_citas</code> en Firebase Cloud Firestore.</p>
+            
+            <h3>Campos e Instancias de Clase</h3>
+            <table>
+                <thead>
+                    <tr><th>Modificador y Tipo</th><th>Campo</th><th>Descripción</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>private String</code></td><td><code>fecha</code></td><td>Fecha programada para la reserva. Formato estándar persistido: <code>yyyy-MM-dd</code>.</td></tr>
+                    <tr><td><code>private String</code></td><td><code>hora</code></td><td>Hora exacta de inicio de la prestación del servicio. Formato persistido: <code>HH:mm</code>.</td></tr>
+                    <tr><td><code>private String</code></td><td><code>servicio</code></td><td>Denominación comercial del servicio contratado (ej. "Corte de pelo").</td></tr>
+                    <tr><td><code>private String</code></td><td><code>userId</code></td><td>UID global generado e indexado por Firebase Auth correspondiente al cliente solicitante.</td></tr>
+                    <tr><td><code>private String</code></td><td><code>estado</code></td><td>Ciclo de vida interno de la reserva. Valores de estado: <code>"realizada"</code>, <code>"no_realizada"</code> o null.</td></tr>
+                    <tr><td><code>private transient String</code></td><td><code>userName</code></td><td>Atributo volátil en RAM usado para la interfaz de administración. Al estar marcado como <code>transient</code>, es omitido explícitamente en el mapeo de Firestore para optimizar costos de almacenamiento en la nube.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card" id="timeslot">
+            <h2>Class TimeSlot <span class="badge">POJO Model</span></h2>
+            <p class="intro">Clase encargada de definir el modelo elemental de una franja de tiempo fija de 30 minutos dentro de la agenda diaria comercial del negocio.</p>
+            
+            <h3>Constructores</h3>
+            <table>
+                <thead>
+                    <tr><th>Constructor y Definición técnico-arquitectónica</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>public TimeSlot()</code><br><span class="desc">Constructor vacío explícito. Requisito técnico imprescindible exigido por el SDK nativo de Firebase para permitir la desreferenciación automática del modelo cloud mediante la función <code>document.toObject(TimeSlot.class)</code> sin lanzar excepciones en tiempo de ejecución.</span></td></tr>
+                    <tr><td><code>public TimeSlot(String time, boolean available, boolean isPast)</code><br><span class="desc">Constructor parametrizado de sobrecarga utilizado en tiempo de renderizado para inicializar la celda horaria calculando su elegibilidad basándose en la marca temporal actual del sistema.</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card" id="adapter">
+            <h2>Class TimeSlotAdapter <span class="badge">RecyclerView.Adapter</span></h2>
+            <p class="intro">Controlador y adaptador encargado de inyectar el listado dinámico de franjas horarias y maquetar la lógica visual del selector de turnos en base a su disponibilidad.</p>
+            
+            <h3>Métodos Críticos de Interfaz</h3>
+            <table>
+                <thead>
+                    <tr><th>Modificador y Tipo</th><th>Método y Documentación Funcional</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>public VH</code></td><td><code>onCreateViewHolder(ViewGroup parent, int viewType)</code><br><span class="desc">Instancia la estructura física de la vista inflándola a partir del recurso XML interno <code>item_time_slot.xml</code> y vincula el objeto con el contenedor estático de memoria.</span></td></tr>
+                    <tr><td><code>public void</code></td><td><code>onBindViewHolder(VH holder, int position)</code><br><span class="desc">Aplica las reglas de negocio estéticas sobre el botón interactivo según el estado de la cita: si la hora ya ha expirado o está reservada, inhabilita el clic táctil y reduce el canal alfa (opacidad visual) entre el 35% y 40%. Si está disponible, vincula los escuchadores de eventos para procesar la selección del usuario.</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card" id="citasact">
+            <h2>Class CitasActivity <span class="badge">Activity Component</span></h2>
+            <p class="intro">Controlador gráfico del lado del cliente encargado de recuperar, listar secuencialmente y gestionar las acciones relativas a las reservas vigentes asociadas al usuario autenticado.</p>
+            
+            <h3>Lógica y Flujo de Procesamiento</h3>
+            <table>
+                <thead>
+                    <tr><th>Modificador y Tipo</th><th>Método e Impacto en Base de Datos</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>protected void</code></td><td><code>onCreate(Bundle savedInstanceState)</code><br><span class="desc">Punto de entrada de la actividad. Vincula las referencias del ListView y del botón de cancelación, inicializa los componentes del SDK de Firestore y gatilla el proceso de sincronización asíncrona.</span></td></tr>
+                    <tr><td><code>private void</code></td><td><code>loadUserCitas()</code><br><span class="desc">Lanza una petición estructurada (Query) a Firestore apuntando a la colección raíz y aplicando una cláusula condicional de filtrado (WhereEqualTo) con el UID del usuario logueado, poblando dinámicamente el adaptador gráfico en tiempo real.</span></td></tr>
+                    <tr><td><code>private void</code></td><td><code>mostrarDialogoCancelacion(int posicion)</code><br><span class="desc">Despliega un cuadro de diálogo flotante (AlertDialog) de carácter seguro. Si el usuario confirma, realiza una llamada a Firestore borrando o actualizando el documento seleccionado y sincronizando la interfaz de usuario en el acto.</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card" id="reservaract">
+            <h2>Class ReservarCitaActivity <span class="badge">Activity Component</span></h2>
+            <p class="intro">El componente neurálgico del flujo de reservas de la aplicación. Maneja la lógica de negocio síncrona, validación previa de conectividad a la red y el control transaccional concurrente de agendas.</p>
+            
+            <h3>Métodos y Lógica de Negocio</h3>
+            <table>
+                <thead>
+                    <tr><th>Modificador y Tipo</th><th>Método y Control de Concurrencia NoSQL</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>private void</code></td><td><code>checkDisponibilidadFecha(String fecha)</code><br><span class="desc">Accede a la colección en la nube, descarga el estado de los bloques de turnos ocupados para la fecha seleccionada y cruza dinámicamente los datos en local para invalidar los horarios duplicados en la pantalla de reservas.</span></td></tr>
+                    <tr><td><code>private void</code></td><td><code>confirmReservation(View vistaBoton)</code><br><span class="desc">Validación final de seguridad. Inspecciona que los campos de selección requeridos no sean nulos y efectúa una inserción transaccional atómica en la base de datos cloud. En caso de éxito, despliega una alerta guiada (Snackbar) y redirige el flujo de control.</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
