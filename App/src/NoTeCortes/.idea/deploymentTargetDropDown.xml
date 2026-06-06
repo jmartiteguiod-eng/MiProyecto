@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="ForceChangePasswordActivity">
+        <State />
+      </entry>
+      <entry key="HomeActivity">
+        <State />
+      </entry>
+      <entry key="LoginActivity">
+        <State />
+      </entry>
+      <entry key="MainActivity">
+        <State />
+      </entry>
+      <entry key="RegisterActivity">
+        <State />
+      </entry>
+      <entry key="ReservarCitaActivity2">
+        <State />
+      </entry>
+      <entry key="app">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\selin\.android\avd\Pixel_7_Pro_API_29.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2025-11-17T19:55:57.963374900Z" />
+        </State>
+      </entry>
+    </value>
+  </component>
+</project>

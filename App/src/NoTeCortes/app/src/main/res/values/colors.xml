@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="azul_corporativo">#0D47A1</color>
+    <color name="rojo_alerta">#D32F2F</color>
+    <color name="amarillo_alerta">#FFFF00</color>
+    <color name="verde_exito">#2E7D32</color>
+</resources>

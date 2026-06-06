@@ -1,0 +1,14 @@
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Desktop/Doc NoteCortes" />
+    <option name="OTHER_OPTIONS" value="javadoc -encoding UTF-8 -docencoding UTF-8 -charset UTF-8 -d &quot;C:\Users\Usuario\Desktop\Doc NoteCortes&quot; &quot;C:\Users\Usuario\AndroidStudioProjects\NoTeCortes\app\src\main\java\com\example\notecortes\Citas\ReservarCitaActivity.java&quot; &quot;C:\Users\Usuario\AndroidStudioProjects\NoTeCortes\app\src\main\java\com\example\notecortes\Citas\CitasActivity.java&quot; &quot;C:\Users\Usuario\AndroidStudioProjects\NoTeCortes\app\src\main\java\com\example\notecortes\Adaptador\TimeSlotAdapter.java&quot; &quot;C:\Users\Usuario\AndroidStudioProjects\NoTeCortes\app\src\main\java\com\example\notecortes\Clases\TimeSlot.java&quot; &quot;C:\Users\Usuario\AndroidStudioProjects\NoTeCortes\app\src\main\java\com\example\notecortes\Clases\Cita.java&quot;" />
+    <option name="OPTION_INCLUDE_LIBS" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jbr-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

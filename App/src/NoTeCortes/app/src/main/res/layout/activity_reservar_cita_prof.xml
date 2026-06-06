@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPrev"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:text="◀"
+            android:textColor="#0D47A1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPeriodo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Semana / Mes"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="17sp"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:text="▶"
+            android:textColor="#0D47A1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnWeek"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Semana"
+            android:textAllCaps="false"
+            android:backgroundTint="#0D47A1"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnMonth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Mes"
+            android:textAllCaps="false"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="#333333"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFechaSeleccionada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha: —"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic"
+        android:textColor="#666666"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btnPickDate"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📅 Seleccionar fecha"
+        android:textAllCaps="false"
+        android:textColor="#0D47A1"
+        app:strokeColor="#0D47A1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:padding="4dp">
+
+        <Spinner
+            android:id="@+id/spinnerService"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:spinnerMode="dropdown"/>
+
+        <Spinner
+            android:id="@+id/spinnerDuration"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvHorasInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horas disponibles"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTimeSlots"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="CONFIRMAR RESERVA"
+        android:textStyle="bold"
+        android:backgroundTint="#0D47A1"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        app:cornerRadius="8dp"/>
+
+</LinearLayout>

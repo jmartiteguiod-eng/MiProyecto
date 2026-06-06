@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#0D47A1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo_notecortes"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="PANEL DE GESTIÓN"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="-20dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins">
+
+            <Button
+                android:id="@+id/btnCrearServicio"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Crear Servicio"
+                android:textColor="#0D47A1"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnVerServicios"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Ver Servicios"
+                android:textColor="#0D47A1"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnCrearPromo"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Nueva Promo"
+                android:textColor="#0D47A1"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnVerPromos"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Gest. Promos"
+                android:textColor="#0D47A1"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnBloqueoFecha"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Bloquear Días"
+                android:textColor="#0D47A1"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnDesBloqueoFecha"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Desbloquear"
+                android:textColor="#0D47A1"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnGestionCitas"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#0D47A1"
+                android:text="Citas Clientes"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnCitaManual"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#0D47A1"
+                android:text="Cita Manual"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnCancelacionCitaManual"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Anular Cita"
+                android:textColor="#D32F2F"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnHistorial"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Historial"
+                android:textColor="#0D47A1"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnGestionEmpleado"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:backgroundTint="#2196F3"
+                android:text="Empleados"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </GridLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAdminLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#D32F2F"
+        android:text="CERRAR SESIÓN"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+</LinearLayout>

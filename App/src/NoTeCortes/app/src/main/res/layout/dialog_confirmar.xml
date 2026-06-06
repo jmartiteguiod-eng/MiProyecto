@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DESBLOQUEAR FECHA"
+        android:textColor="#0D47A1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:letterSpacing="0.1"/>
+
+    <TextView
+        android:id="@+id/txtMensajeDialogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="¿Quieres desbloquear este día?"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnCancelarDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCELAR"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#757575"/>
+
+        <Button
+            android:id="@+id/btnConfirmarDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESBLOQUEAR"
+            android:backgroundTint="#0D47A1"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

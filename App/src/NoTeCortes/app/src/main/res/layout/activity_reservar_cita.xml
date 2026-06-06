@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtServicio"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:hint="Servicio" />
+
+    <EditText
+        android:id="@+id/edtFecha"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:hint="Fecha (dd/mm/aaaa)" />
+
+    <EditText
+        android:id="@+id/edtHora"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:hint="Hora (hh:mm)" />
+
+    <Button
+        android:id="@+id/btnGuardarCita"
+        android:text="Guardar Cita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

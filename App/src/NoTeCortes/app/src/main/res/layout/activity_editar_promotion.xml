@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtDescripcionPromo"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="Descripción" />
+
+        <EditText
+            android:id="@+id/edtPrecioPromo"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:hint="Precio"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtDirigidoA"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:hint="Dirigido a" />
+
+        <EditText
+            android:id="@+id/edtFechaInicio"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:hint="Fecha inicio (dd/MM/yyyy)" />
+
+        <EditText
+            android:id="@+id/edtFechaFin"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:hint="Fecha fin (dd/MM/yyyy)" />
+
+        <Button
+            android:id="@+id/btnGuardarCambios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar cambios" />
+
+        <Button
+            android:id="@+id/btnActivar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activar promoción" />
+
+        <Button
+            android:id="@+id/btnDesactivar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desactivar promoción" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar promoción" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <ImageView
+        android:id="@+id/logoApp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Logo No Te Cortes"
+        android:src="@drawable/logo_notecortes"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PANEL EMPLEADO"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#0D47A1"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <Button
+            android:id="@+id/btnVerServicios"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#0D47A1"
+            android:text="Ver\nServicios"
+            android:textSize="13sp"
+            app:cornerRadius="12dp" />
+
+        <Button
+            android:id="@+id/btnVerPromos"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#0D47A1"
+            android:text="Ver\nPromos"
+            android:textSize="13sp"
+            app:cornerRadius="12dp" />
+
+        <Button
+            android:id="@+id/btnGestionCitas"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#0D47A1"
+            android:text="Citas\nClientes"
+            android:textSize="13sp"
+            app:cornerRadius="12dp" />
+
+        <Button
+            android:id="@+id/btnCitaManual"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#0D47A1"
+            android:text="Cita\nManual"
+            android:textSize="13sp"
+            app:cornerRadius="12dp" />
+
+        <Button
+            android:id="@+id/btnCancelacionCitaManual"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#0D47A1"
+            android:text="Anular\nCita"
+            android:textSize="13sp"
+            app:cornerRadius="12dp" />
+
+        <Button
+            android:id="@+id/btnHistorial"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#0D47A1"
+            android:text="Historial"
+            android:textSize="13sp"
+            app:cornerRadius="12dp" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnAdminLogout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#D32F2F"
+        android:text="Cerrar sesión"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>
